@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Finn Tennis</title>
+
+
+
+
+    <style>
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-rows: 60px 1fr 40px;
+        grid-template-columns: 200px 1fr;
+        grid-template-areas:
+            "header header"
+            "sidebar content"
+            "footer footer";
+        height: 100vh;
+      }
+
+      header {
+        grid-area: header;
+        background: #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+        nav {
+          grid-area: sidebar;
+          background: #eee;
+          padding: 20px;
+      }
+
+      main {
+        grid-area: content;
+        padding: 20px;
+      }
+
+
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        background-color: #000000;
+        padding: 10px;
+      }
+      .grid-container > div {
+        background-color: #ffffffcc;
+        text-align: center;
+        padding: 100px 10px;
+        font-size: 60px;
+      }
+
+      .placeholder {
+        background: #ddd;
+        border: 1px dashed #bbb;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+
+      footer {
+        text-align: center; 
+        grid-area: footer;
+        background: #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+
+
+
+
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      /* Change the link color to #111 (black) on hover */
+      li a:hover {
+        background-color: #111;
+      }
+
+
+    </style>
+
+  </head>
+
+  
+
+
+
+  <body>
+
+
+    <main>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="regeln.html">Regeln</a></li>
+          <li><a href="technik.html">Technik</a></li>
+          <li><a href="ausrüstung.html">Ausrüstung</a></li>
+          <li><a href="spieler.html">Berühmte Spieler</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </nav>
+
+
+      <br>
+      <br>
+
+
+      <div class="grid-container">
+        <div class="item1"> < Bild von Aufschlag > </div>
+        <div class="item2">< Titel > </div>
+        <div class="item3">< Bild von Tennisschläger > </div>
+        <div class="item4">< Formular > </div>
+        <div class="item5">< Bild von Tennisplatz > </div>
+        <div class="item6">< About us > </div>
+      </div>
+
+
+
+
+
+
+
+    </main>
+
+
+
+<footer>
+  <p>Home - News - AGB - About - Impressum - Kontakt</p> 
+</footer>
+
+
+
+
+
+
+
+
+
+</html>

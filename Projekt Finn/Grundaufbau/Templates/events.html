@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berühmte Tennis Events</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f5f5f5, #dcdcdc);
+            height: 100vh;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #444;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        .main-content img {
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .main-content img:hover {
+            transform: scale(1.05);
+        }
+
+        .event-text {
+            width: 45%;
+            text-align: justify;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        footer {
+            background: #444;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Berühmte Tennis Events
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="index3.html">Home</a></li>
+                <li><a href="regeln.html">Regeln</a></li>
+                <li><a href="technik.html">Technik</a></li>
+                <li><a href="ausruestung.html">Ausrüstung</a></li>
+                <li><a href="spieler.html">Berühmte Spieler</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+
+        <section class="main-content">
+            <img src="./Medien/wimbledon.jpg" alt="Wimbledon" />
+            <div class="event-text">
+                <h2>Wimbledon</h2>
+                <p>Wimbledon ist das älteste und prestigeträchtigste Tennisturnier der Welt. Es findet jedes Jahr im Juni und Juli in London statt und zieht die besten Tennisspieler der Welt an. Das Turnier zeichnet sich durch seine traditionelle Atmosphäre aus, darunter das Tragen von weissen Kleidern und der aufwändige Rasenbelag. Mit 135 Jahren Geschichte hat Wimbledon viele unvergessliche Momente in der Tenniswelt hervorgebracht und ist ein Höhepunkt des Tennissports.</p>
+            </div>
+        </section>
+
+        <section class="main-content">
+            <img src="./Medien/us.jpg" alt="US Open" />
+            <div class="event-text">
+                <h2>US Open</h2>
+                <p>Die US Open ist eines der vier Grand-Slam-Turniere und wird jedes Jahr in New York City ausgetragen. Es ist bekannt für seine elektrisierende Atmosphäre und die einzigartigen Bedingungen, da es das einzige Grand-Slam-Turnier ist, das auf Hartplatz stattfindet. Mit einer Vielzahl an spannenden Matches und überraschenden Siegern gehört die US Open zu den grössten Ereignissen im Tennissport.</p>
+            </div>
+        </section>
+
+        <section class="main-content">
+            <img src="./Medien/french.jpg" alt="French Open" />
+            <div class="event-text">
+                <h2>French Open</h2>
+                <p>Die French Open, auch bekannt als Roland Garros, ist eines der grössten Tennisturniere und das einzige Grand-Slam-Turnier, das auf Sandbelag gespielt wird. Es findet jährlich in Paris statt und zieht eine Vielzahl von Tennisfans an. Die French Open sind besonders bekannt für ihre langen und intensiven Spiele und haben einige der denkwürdigsten Momente in der Tennisgeschichte hervorgebracht.</p>
+            </div>
+        </section>
+
+        <section class="main-content">
+            <img src="./Medien/australian.jpg" alt="Australian Open" />
+            <div class="event-text">
+                <h2>Australian Open</h2>
+                <p>Die Australian Open ist das erste Grand-Slam-Turnier des Jahres und wird jährlich in Melbourne ausgetragen. Es bietet die besten Spieler der Welt und eine der aufregendsten Tennisumgebungen, die von begeisterten Fans und hervorragenden Veranstaltungsorten geprägt ist. Das Turnier findet auf Hartplatz statt und ist besonders bekannt für seine Sommerhitze und spannenden Spiele.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+      <p> <a href="index3.html"> Home </a>  -  <a href="https://www.eurosport.de/tennis/"> News </a>  - <a href="agb.html"> AGB </a> - <a href="about.html"> About </a> - <a href="impressum.html"> Impressum </a> - <a href="mailto:beda.brunner@edu.tbz.ch">Kontakt </a> </p>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Roger Federer</title><style>body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f5f5f5, #dcdcdc);
+            height: 100vh;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #444;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .main-content img {
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .main-content img:hover {
+            transform: scale(1.05);
+        }
+
+        .bio-text {
+            width: 45%;
+            text-align: justify;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        footer {
+            background: #444;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .main-content img, .bio-text {
+                width: 90%;
+            }
+
+            header {
+                font-size: 28px;
+                padding: 15px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+                padding: 8px 15px;
+            }
+
+            .bio-text {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            header {
+                font-size: 24px;
+            }
+
+            nav ul li a {
+                font-size: 14px;
+                padding: 6px 10px;
+            }
+
+            footer {
+                font-size: 12px;
+            }
+        }</style></head><body><header>Roger Federer - Legende des Tennis</header><main><nav><ul><li><a href="index3.html">Home</a></li><li><a href="regeln.html">Regeln</a></li><li><a href="technik.html">Technik</a></li><li><a href="ausruestung.html">Ausrüstung</a></li><li><a href="spieler.html">Berühmte Spieler</a></li><li><a href="events.html">Events</a></li></ul></nav><section class="main-content"><img src="./Medien/roger.jpg" alt="Roger Federer"><div class="bio-text"><h2>Über Roger Federer</h2><p>Roger Federer ist ein Schweizer Tennisspieler, der weithin als einer der besten Tennisspieler aller Zeiten gilt. Mit über 20 Grand-Slam-Titeln hat er die Tenniswelt nachhaltig geprägt. Federer, der für seine aussergewöhnliche Technik und sein Spielverständnis bekannt ist, hat die Tenniswelt über zwei Jahrzehnte dominiert und ist auch abseits des Courts ein globales Vorbild. Als einer der beliebtesten Sportler der Welt wird Federer sowohl für seine sportliche Leistung als auch für sein Engagement im sozialen Bereich hoch geschätzt.</p></div></section></main><footer><p><a href="index3.html">Home</a> - <a href="https://www.eurosport.de/tennis/">News</a> - <a href="agb.html">AGB</a> - <a href="about.html">About</a> - <a href="impressum.html">Impressum</a> - <a href="mailto:beda.brunner@edu.tbz.ch">Kontakt</a></p></footer></body></html>

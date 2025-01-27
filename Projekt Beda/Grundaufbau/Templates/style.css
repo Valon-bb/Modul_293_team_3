@@ -1,0 +1,244 @@
+/* Allgemeine Stile */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  height: 100%; /* Füllt den gesamten Viewport aus */
+}
+
+/* Header */
+header {
+  background-color: #086935;
+  color: #fff;
+  display: flex; /* Flexbox für bessere Ausrichtung */
+  justify-content: space-between; /* Platz zwischen Logo und Navigation */
+  align-items: center; /* Vertikale Ausrichtung */
+  padding: 10px 20px; /* Innenabstand */
+}
+
+/* Logo im Header */
+header .logo img {
+  height: 50px; /* Passe die Höhe des Logos an */
+  object-fit: contain; /* Bild bleibt proportional */
+}
+
+/* Navigation im Header */
+header nav {
+  display: flex; /* Navigation als Flex-Container */
+  gap: 15px; /* Abstand zwischen Links */
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px; /* Etwas Polsterung */
+  transition: color 0.3s ease; /* Sanfter Übergang beim Hover */
+}
+
+header nav a:hover {
+  color: #c2b280; /* Farbe beim Hover ändern */
+}
+
+/* Footer */
+footer {
+  background-color: #086935;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer nav a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Layout */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Stellt sicher, dass die gesamte Höhe des Viewports ausgefüllt wird */
+}
+
+main {
+  flex: 1; /* Lässt das Hauptlayout den verbleibenden Platz einnehmen */
+  display: grid;
+  grid-template-columns: 1fr; /* Einspaltig als Standard */
+  gap: 10px;
+  padding: 10px;
+  background-color: #6d4835;
+}
+
+/* Grid-Elemente */
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Grid-Konfiguration */
+.item1 { grid-column: span 1; grid-row: span 1; }
+.item2 { grid-column: span 1; }
+.item3 { grid-column: span 1; }
+.item4 { grid-column: span 1; }
+.item5 { grid-column: span 1; }
+.item6 { grid-column: span 1; }
+.item7 { grid-column: span 1; }
+
+/* Responsive Anpassungen für Main */
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten für Tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(4, 1fr); /* Vier Spalten für größere Bildschirme */
+  }
+}
+
+/* Regeln Container */
+.regeln-container {
+  display: flex;
+  flex-wrap: wrap; /* Boxen umbrechen, wenn Platz knapp wird */
+  gap: 20px; /* Abstand zwischen den Boxen */
+  justify-content: space-between; /* Boxen gleichmäßig verteilen */
+  padding: 20px;
+  margin: 0 auto; /* Zentriert den Container */
+  max-width: 1200px;
+}
+
+/* Einzelne Boxen */
+.regeln {
+  flex: 1 1 100%;
+  background-color: #C2B280;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Responsive Anpassungen für .regeln */
+@media (min-width: 768px) {
+  .regeln {
+    flex: 1 1 calc(50% - 20px); /* Zwei Boxen nebeneinander */
+  }
+}
+
+@media (min-width: 1024px) {
+  .regeln {
+    flex: 1 1 calc(33.33% - 20px); /* Drei Boxen nebeneinander */
+  }
+}
+
+/* Gear und Tipps */
+.section, .tipps, .kontakt {
+  flex: 1; /* Container füllt den gesamten Platz */
+  width: 100%; /* Nimmt den gesamten Platz in der Breite ein */
+  padding: 20px;
+  background-color: #C2B280;
+  color: #333;
+  border-radius: 10px; /* Abgerundete Ecken */
+  border: 1px solid #ccc; /* Rand für die Boxen */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten für mehr Tiefe */
+  box-sizing: border-box; /* Stellt sicher, dass Padding und Border zur Gesamtgröße zählen */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Kontaktbereich */
+.kontakt {
+  max-width: 800px;
+  width: 100%;
+  background-color: #C2B280;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Formular */
+.history-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.history-form label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.history-form input, .history-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.history-form textarea {
+  resize: vertical;
+}
+
+.history-form button {
+  padding: 10px 20px;
+  background-color: #086935;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.history-form button:hover {
+  background-color: #064b27;
+}
+
+/* Responsive Anpassungen für Kontaktformular */
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+
+  .kontakt {
+    padding: 15px;
+  }
+
+  .history-form h3 {
+    font-size: 18px;
+  }
+
+  .history-form label {
+    font-size: 12px;
+  }
+
+  .history-form input, .history-form textarea {
+    font-size: 14px;
+  }
+}
